@@ -4,7 +4,7 @@ function display() {
     echo "Name: $1"
 }
 
-for folder in $(find . -maxdepth 1 -type d)
+for folder in $(find . -maxdepth 2 -type d)
 do
     display ${folder}
 done
